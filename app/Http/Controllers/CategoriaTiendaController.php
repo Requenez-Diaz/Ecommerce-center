@@ -15,7 +15,8 @@ class CategoriaTiendaController extends Controller
      */
     public function index()
     {
-        //
+       $datos['categoriaTiendas'] = CategoriaTienda::all();
+       return View('categoriaTienda/index', $datos);
     }
 
     /**

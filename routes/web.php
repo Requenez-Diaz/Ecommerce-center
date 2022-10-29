@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Models\CategoriaTienda;
+use App\Http\Controllers\CategoriaTiendaController;
 
 
 /*
@@ -22,9 +22,4 @@ Route::get('/greeting', function () {
     return 'eliseo';
 });
 
-Route:: resource('categorias',CategoriaTienda::class);
-
-{Auth::routes();
-
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');}
+Route::resource('categorias', CategoriaTiendaController::class);
