@@ -25,10 +25,10 @@
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <label for="adress" class="col-md-4 col-form-label text-md-end">{{ __('Adress') }}</label>
+                            <label for="adress" class="col-md-4 col-form-label text-md-end">{{ __('Address') }}</label>
 
                             <div class="col-md-6">
-                                <input id="adress" type="text" class="form-control @error('adress') is-invalid @enderror" name="adress" value="{{ old('adress') }}" required autocomplete="adress" autofocus>
+                                <input id="adress" type="adress" class="form-control @error('adress') is-invalid @enderror" name="adress" value="{{ old('adress') }}" required autocomplete="adress">
 
                                 @error('adress')
                                     <span class="invalid-feedback" role="alert">

@@ -23,3 +23,7 @@ Route::get('/greeting', function () {
 });
 
 Route::resource('categorias', CategoriaTiendaController::class);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
